@@ -1,2 +1,11 @@
 
-npx lint-staged
+echo "🔍 Running lint..."
+npm run lint
+
+echo "🔍 Running formating..."
+npm run format
+
+echo "🧪 Running tests..."
+npm test
+
+echo "✅ Pre-commit checks passed!"
