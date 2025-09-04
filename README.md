@@ -1,69 +1,88 @@
-# React + TypeScript + Vite
+# Personal Knowledge Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, AI-powered web app for collecting, organizing, and searching notes, articles, code snippets, and bookmarks. Built with React, Redux Toolkit, Material UI, RTK Query, Firebase Auth, and GraphQL federation. Designed for both desktop and mobile, with advanced features like semantic search, auto-tagging, and summarization.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Secure user authentication (Firebase Auth, Google/GitHub OAuth)
+- Knowledge collection: notes, articles, code snippets, bookmarks
+- Organization: tags, folders, collections
+- AI integration: semantic search, auto-tagging, summarization, Q&A
+- Responsive design (Material UI breakpoints)
+- Accessibility: keyboard navigation, ARIA labels, theme toggle
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📝 User Stories (Initial)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- As a user, I want to securely log in so that my notes and bookmarks are private and accessible only to me.
+- As a user, I want to add notes so I can organize my thoughts.
+- As a user, I want to search my notes using AI so I can find information quickly.
+- As a user, I want to switch between light and dark themes for comfortable viewing.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🖼️ Wireframes
+
+![Login Page Wireframe](./docs/login-wireframe.png)
+![Home Page Wireframe](./docs/home-wireframe.png)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, Redux Toolkit, Material UI, RTK Query, React Router, React Hook Form, Zod
+- **Backend:** Node.js/Express or Go, GraphQL (Apollo Federation), PostgreSQL/MongoDB
+- **AI:** OpenAI API
+- **Auth:** Firebase Auth
+- **DevOps:** Docker, GitHub Actions, Husky, Prettier, ESLint
+- **Codegen:** GraphQL Code Generator
+
+---
+
+## 🏗️ Project Structure
+
+```
+src/
+  features/
+    notes/
+    bookmarks/
+    snippets/
+    navigation/
+      sidebar/
+      bottom/
+    theme/
+  layouts/
+    MainLayout/
+      components/
+  assets/
+  docs/
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🏷️ Kanban Board
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+[View Kanban Board](https://github.com/users/mayallzObject/projects/2)
+
+---
+
+## 🧑‍💻 Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for coding standards, commit/branch naming, and collaboration guidelines.
+
+---
+
+## 📄 License
+
+MIT License
+
+---
+
+## 🙋‍♂️ About
+
+Created by [Your Name](https://your-portfolio-link.com)
+
+---
