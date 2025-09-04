@@ -75,9 +75,31 @@ src/
 
 ---
 
+
 ## 🧑‍💻 Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for coding standards, commit/branch naming, and collaboration guidelines.
+
+### 🛡️ Code Quality Automation (Husky & lint-staged)
+
+This project uses [Husky](https://typicode.github.io/husky) and [lint-staged](https://github.com/okonet/lint-staged) to enforce code quality before code is committed or pushed:
+
+- **Pre-commit:** Runs ESLint and Prettier on staged files. If any lint or formatting errors are found, the commit will be blocked until they are fixed.
+- **Pre-push:** Runs all tests before allowing a push. If tests fail, the push is blocked.
+
+#### How it works
+
+1. When you `git commit`, Husky triggers lint-staged, which runs ESLint and Prettier only on files you staged for commit.
+2. If any issues are found, the commit is stopped and you must fix the errors before committing again.
+3. When you `git push`, Husky runs the test suite. If tests fail, the push is blocked.
+
+#### Customizing checks
+
+- To add more checks, edit `.husky/pre-commit`, `.husky/pre-push`, or `lint-staged.config.json`.
+
+#### Why?
+
+This ensures that only well-formatted, lint-free, and tested code enters the repository, improving code quality and reducing errors for everyone.
 
 ---
 
