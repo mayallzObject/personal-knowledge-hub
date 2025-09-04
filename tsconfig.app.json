@@ -15,13 +15,37 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
+    /* Path Aliases */
+    "baseUrl": "./src",
+    "paths": {
+      "@api": ["api/index.ts"],
+      "@api/*": ["api/*"],
+      "@app": ["app/index.ts/*"],
+      "@app/*": ["app/*"],
+      "@components": ["components/index.ts"],
+      "@components/*": ["components/*"],
+      "@features": ["features/index.ts"],
+      "@features/*": ["features/*"],
+      "@layouts": ["layouts/index.ts"],
+      "@layouts/*": ["layouts/*"],
+      "@pages": ["pages/index.ts"],
+      "@pages/*": ["pages/*"],
+      "@navigation": ["layouts/index.ts"],
+      "@navigation/*": ["layouts/*"],
+      "@theme": ["theme/index.ts"],
+      "@theme/*": ["theme/*"],
+      "@utils": ["utils/index.ts"],
+      "@utils/*": ["utils/*"]
+    },
     /* Linting */
     "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "include": ["src", "vite.config.ts"],
 }
