@@ -1,7 +1,4 @@
 {
-  "ignore": ["*.md", "*.json", ".husky/*","vite.config.ts"],
-  "*.{js,jsx,ts,tsx}": [
-    "eslint --fix",
-    "prettier --write"
-  ]
+  "ignore": ["*.md", "*.json", ".husky/*", "vite.config.ts"],
+  "*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write"]
 }
