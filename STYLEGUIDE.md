@@ -1,36 +1,40 @@
 # Personal Knowledge Hub Style Guide
 
+![Best Practices](https://img.shields.io/badge/style-guide-blue)
+![Accessibility](https://img.shields.io/badge/accessibility-AA-green)
+![Tech Stack](https://img.shields.io/badge/tech-React%20%7C%20MUI%20%7C%20TypeScript-blue)
+
 > **Purpose:** Defines UI and styling standards for Personal Knowledge Hub. Adhering to these guidelines ensures a consistent, accessible, and maintainable user experience across all features and contributors.
 
 ---
 
-## Table of Contents
+## 📚 Table of Contents
 
-1. [Introduction](#1-introduction)
-2. [Principles & Philosophy](#2-principles--philosophy)
-3. [Theme Architecture & Design Tokens](#3-theme-architecture--design-tokens)
-4. [MUI Component Usage](#4-mui-component-usage)
-5. [Styling Approach (`sx` Prop & sx Files)](#5-styling-approach-sx-prop--sx-files)
-6. [Responsive Design & Breakpoints](#6-responsive-design--breakpoints)
-7. [Accessibility Standards](#7-accessibility-standards)
-8. [Layout & Spacing](#8-layout--spacing)
-9. [Component Overrides & Customization](#9-component-overrides--customization)
-10. [Typing & Props for sx Objects](#10-typing--props-for-sx-objects)
-11. [Naming Conventions (Files, Variables, Styles)](#11-naming-conventions-files-variables-styles)
-12. [File & Folder Structure for Styles](#12-file--folder-structure-for-styles)
-13. [Reusability & Modularity](#13-reusability--modularity)
-14. [Performance Considerations](#14-performance-considerations)
-15. [Testing & Documentation for Styles](#15-testing--documentation-for-styles)
-16. [Tooling & Automation](#16-tooling--automation)
-17. [Contribution Workflow](#17-contribution-workflow)
-18. [Accessibility Testing](#18-accessibility-testing)
-19. [Performance Metrics](#19-performance-metrics)
-20. [Internationalization & RTL](#20-internationalization--rtl)
-21. [Developer Experience](#21-developer-experience)
-22. [Continuous Improvement](#22-continuous-improvement)
-23. [Do’s and Don’ts (Best Practices & Anti-Patterns)](#23-dos-and-donts-best-practices--anti-patterns)
-24. [References & Further Reading](#24-references--further-reading)
-25. [Visual Examples](#25-visual-examples)
+1. [🎯 Introduction](#1-introduction)
+2. [💡 Principles & Philosophy](#2-principles--philosophy)
+3. [🎨 Theme Architecture & Design Tokens](#3-theme-architecture--design-tokens)
+4. [🧩 MUI Component Usage](#4-mui-component-usage)
+5. [🖌️ Styling Approach (`sx` Prop & sx Files)](#5-styling-approach-sx-prop--sx-files)
+6. [📱 Responsive Design & Breakpoints](#6-responsive-design--breakpoints)
+7. [♿ Accessibility Standards](#7-accessibility-standards)
+8. [📏 Layout & Spacing](#8-layout--spacing)
+9. [🔧 Component Overrides & Customization](#9-component-overrides--customization)
+10. [🔤 Typing & Props for sx Objects](#10-typing--props-for-sx-objects)
+11. [📁 Naming Conventions (Files, Variables, Styles)](#11-naming-conventions-files-variables-styles)
+12. [🗂️ File & Folder Structure for Styles](#12-file--folder-structure-for-styles)
+13. [♻️ Reusability & Modularity](#13-reusability--modularity)
+14. [⚡ Performance Considerations](#14-performance-considerations)
+15. [🧪 Testing & Documentation for Styles](#15-testing--documentation-for-styles)
+16. [🤖 Tooling & Automation](#16-tooling--automation)
+17. [🤝 Contribution Workflow](#17-contribution-workflow)
+18. [🦾 Accessibility Testing](#18-accessibility-testing)
+19. [📊 Performance Metrics](#19-performance-metrics)
+20. [🌍 Internationalization & RTL](#20-internationalization--rtl)
+21. [🛠️ Developer Experience](#21-developer-experience)
+22. [🔄 Continuous Improvement](#22-continuous-improvement)
+23. [✅ Do’s and Don’ts (Best Practices & Anti-Patterns)](#23-dos-and-donts-best-practices--anti-patterns)
+24. [🔗 References & Further Reading](#24-references--further-reading)
+25. [🖼️ Visual Examples](#25-visual-examples)
 
 ---
 
