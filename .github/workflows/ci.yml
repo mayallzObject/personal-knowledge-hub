@@ -1,0 +1,50 @@
+# Professional CI workflow for Node.js/TypeScript/Vite project
+name: CI
+
+on:
+  push:
+    branches: ["main", "develop", "release/**", "feature/**", "hotfix/**"]
+  pull_request:
+    branches: ["main", "develop", "release/**", "feature/**", "hotfix/**"]
+
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 22.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Type check
+        run: npx tsc --noEmit
+
+      - name: Format check
+        run: npx prettier --check .
+
+      # Uncomment if you add tests
+      # - name: Test
+      #   run: npm test
+
+      - name: Build
+        run: npm run build
+
+      - name: Docker build (dev image)
+        run: docker build --target dev -t personal-knowledge-hub-dev .
+
+      - name: Docker build (prod image)
+        run: docker build --target prod -t personal-knowledge-hub-prod .
+
+      - name: Show Docker images
+        run: docker images | grep personal-knowledge-hub
