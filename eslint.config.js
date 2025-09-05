@@ -44,6 +44,7 @@ export default [
             '/^@layouts/',
             '/^@pages/',
             '/^@utils/',
+            '/^@design-tokens/',
             '/^@theme/',
             ['parent', 'sibling', 'index'],
           ],

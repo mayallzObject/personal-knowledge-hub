@@ -15,6 +15,9 @@
     "docker:dev": "docker run --rm -p 5173:5173 -v $(pwd):/app -v /app/node_modules personal-knowledge-hub-dev"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
@@ -47,6 +50,7 @@
     "prettier": "^3.6.2",
     "typescript": "~5.8.3",
     "vite": "^7.1.2",
+    "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.2.4"
   }
 }

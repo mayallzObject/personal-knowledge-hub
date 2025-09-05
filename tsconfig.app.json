@@ -34,6 +34,8 @@
       "@navigation/*": ["layouts/*"],
       "@theme": ["theme/index.ts"],
       "@theme/*": ["theme/*"],
+      "@design-tokens/*": ["design-tokens/*"],
+      "@design-tokens": ["design-tokens/index.ts"],
       "@utils": ["utils/index.ts"],
       "@utils/*": ["utils/*"]
     },

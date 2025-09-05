@@ -59,11 +59,7 @@ It is intended for all contributors and should be followed for every UI change.
 
 ## 3. Theme Architecture & Design Tokens
 
-- Centralize all design tokens (colors, spacing, typography) in `src/theme/theme.ts`.
-- Use MUI’s `createTheme` to extend and customize the theme.
-- Always use theme colors and spacing via string keys in the `sx` prop.
-- If you extend the theme, use TypeScript module augmentation to ensure type safety.
-- For advanced theming, see [MUI Design Tokens](https://mui.com/material-ui/customization/theming/#design-tokens).
+Centralize all design tokens (colors, spacing, typography, radii, etc.) in `src/theme/tokens/` and import them into your theme.
 
 **Example:**
 

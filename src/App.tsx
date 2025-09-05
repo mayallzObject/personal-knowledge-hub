@@ -1,6 +1,8 @@
+import MainLayout from '@layouts/MainLayout/MainLayout'
+
 const App = () => (
   <div>
-    <h1>Personal knowledge hub</h1>
+    <MainLayout />
   </div>
 )
 
