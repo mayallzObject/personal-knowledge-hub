@@ -127,6 +127,7 @@ This ensures that only well-formatted, lint-free, and tested code enters the rep
    ```
 
 ### Notes
+
 - The `.dockerignore` file ensures your image is small and fast by excluding unnecessary files.
 - For more advanced Docker usage, see the official [Docker documentation](https://docs.docker.com/).
 

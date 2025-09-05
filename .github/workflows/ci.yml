@@ -3,9 +3,9 @@ name: CI
 
 on:
   push:
-    branches: ["main", "develop", "release/**", "feature/**", "hotfix/**"]
+    branches: ['main', 'develop', 'release/**', 'feature/**', 'hotfix/**']
   pull_request:
-    branches: ["main", "develop", "release/**", "feature/**", "hotfix/**"]
+    branches: ['main', 'develop', 'release/**', 'feature/**', 'hotfix/**']
 
 jobs:
   build-and-check:
