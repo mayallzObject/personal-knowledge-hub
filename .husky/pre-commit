@@ -6,6 +6,6 @@ echo "🔍 Running formating..."
 npm run format
 
 echo "🧪 Running tests..."
-npm test
+npx vitest run --config vite.config.test.ts
 
 echo "✅ Pre-commit checks passed!"

@@ -1,8 +1,7 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
+
 
 echo "🧪 Running tests before push..."
 echo "🧪 Running Vitest before push..."
-npx vitest run
+npx vitest run --config vite.config.test.ts
 
 echo "🚀 Ready to push!"

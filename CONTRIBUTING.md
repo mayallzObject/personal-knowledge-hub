@@ -66,9 +66,10 @@ This document outlines the standards and processes to ensure code quality, consi
 
 ## 5. 🧪 Testing
 
-- Write **unit tests** for all logic and components using **Jest** and **React Testing Library**.
-- Place tests in `__tests__` folders or alongside components.
+- Write **unit tests** for all logic and components using **Vitest** and **React Testing Library**.
+- Place tests alongside components using `.test.tsx` or `.test.ts` suffix.
 - Ensure new code is covered by tests before merging.
+- Follow the [testing guide](./TESTING.md) for rules, patterns, and best practices.
 
 ---
 
