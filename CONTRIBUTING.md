@@ -43,8 +43,10 @@ This document outlines the standards and processes to ensure code quality, consi
 ## 3. 🌳 Branching & Commit Messages
 
 - Create branches using this format:
-  `us-<user-story-number>/task-<task-number>-<short-description>`
-  - Example: `us-1/task-2-add-wireframes`
+  `<type>/us-<user-story-number>/task-<task-number>/<short-description>`
+  - Example: `feat/us-1/task-2/add-wireframes`
+  - Example: `bugfix/us-2/task-10/fix-login`
+  - Example: `chore/us-3/task-5/update-deps`
 - Use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for commit messages:
   - `feat: [US-1/TASK-2] add wireframes to /docs`
   - `fix: [US-2/TASK-1] correct note saving bug`
@@ -64,9 +66,10 @@ This document outlines the standards and processes to ensure code quality, consi
 
 ## 5. 🧪 Testing
 
-- Write **unit tests** for all logic and components using **Jest** and **React Testing Library**.
-- Place tests in `__tests__` folders or alongside components.
+- Write **unit tests** for all logic and components using **Vitest** and **React Testing Library**.
+- Place tests alongside components using `.test.tsx` or `.test.ts` suffix.
 - Ensure new code is covered by tests before merging.
+- Follow the [testing guide](./TESTING.md) for rules, patterns, and best practices.
 
 ---
 

@@ -47,9 +47,11 @@ jobs:
       - name: Format check
         run: npx prettier --check .
 
-      # Uncomment if you add tests
-      # - name: Test
-      #   run: npm test
+      - name: Test
+        run: npx vitest run --config vite.config.test.ts
+
+      - name: Test with coverage
+        run: npm run test:coverage
 
       - name: Build
         run: npm run build

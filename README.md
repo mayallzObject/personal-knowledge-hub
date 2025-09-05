@@ -79,6 +79,8 @@ src/
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for coding standards, commit/branch naming, and collaboration guidelines.
 
+For test strategy, patterns, and best practices, see [TESTING.md](./TESTING.md).
+
 ### 🛡️ Code Quality Automation (Husky & lint-staged)
 
 This project uses [Husky](https://typicode.github.io/husky) and [lint-staged](https://github.com/okonet/lint-staged) to enforce code quality before code is committed or pushed:
