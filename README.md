@@ -123,8 +123,10 @@ This ensures that only well-formatted, lint-free, and tested code enters the rep
    ```
 2. Run the dev container (with hot reload):
    ```sh
-   docker run -p 5173:5173 -v $(pwd):/app personal-knowledge-hub-dev
+   docker run -p 5173:5173 -v $(pwd):/app -v /app/node_modules personal-knowledge-hub-dev
    ```
+
+> **Note:** The `docker:dev` script in `package.json` uses Unix shell syntax (`$(pwd)`). On Windows, use Git Bash or manually specify the full path to your project directory in the `-v` option.
 
 ### Notes
 
