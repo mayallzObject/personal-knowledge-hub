@@ -102,6 +102,39 @@ This ensures that only well-formatted, lint-free, and tested code enters the rep
 
 ---
 
+## 🐳 Docker Usage
+
+### Build and Run for Production
+
+1. Build the Docker image:
+   ```sh
+   docker build -t personal-knowledge-hub .
+   ```
+2. Run the production container:
+   ```sh
+   docker run -p 4173:4173 personal-knowledge-hub
+   ```
+
+### Development Mode
+
+1. Build the dev image:
+   ```sh
+   docker build --target dev -t personal-knowledge-hub-dev .
+   ```
+2. Run the dev container (with hot reload):
+   ```sh
+   docker run -p 5173:5173 -v $(pwd):/app -v /app/node_modules personal-knowledge-hub-dev
+   ```
+
+> **Note:** The `docker:dev` script in `package.json` uses Unix shell syntax (`$(pwd)`). On Windows, use Git Bash or manually specify the full path to your project directory in the `-v` option.
+
+### Notes
+
+- The `.dockerignore` file ensures your image is small and fast by excluding unnecessary files.
+- For more advanced Docker usage, see the official [Docker documentation](https://docs.docker.com/).
+
+---
+
 ## 📄 License
 
 MIT License
