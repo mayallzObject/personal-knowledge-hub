@@ -3,9 +3,23 @@ name: CI
 
 on:
   push:
-    branches: ['main', 'develop', 'release/**', 'feature/**', 'hotfix/**']
+    branches:
+      - main
+      - dev
+      - release/**
+      - feat/us-*/task-*/**
+      - bugfix/us-*/task-*/**
+      - hotfix/us-*/task-*/**
+      - chore/us-*/task-*/**
   pull_request:
-    branches: ['main', 'develop', 'release/**', 'feature/**', 'hotfix/**']
+    branches:
+      - main
+      - dev
+      - release/**
+      - feat/us-*/task-*/**
+      - bugfix/us-*/task-*/**
+      - hotfix/us-*/task-*/**
+      - chore/us-*/task-*/**
 
 jobs:
   build-and-check:
